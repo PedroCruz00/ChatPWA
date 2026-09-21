@@ -1,5 +1,8 @@
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/sw.js");
+  const serviceWorkerUrl = new URL("sw.js", document.baseURI);
+  navigator.serviceWorker
+    .register(serviceWorkerUrl)
+    .catch((error) => console.error("No se pudo registrar el Service Worker:", error));
 }
 
 // Referencias de jQuery
