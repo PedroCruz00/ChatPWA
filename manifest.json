@@ -1,11 +1,16 @@
 {
   "short_name": "PWA Chat",
   "name": "Chat para heroes",
-  "start_url": "./",
+  "description": "Chat interactivo para compartir mensajes entre heroes.",
+  "lang": "es",
+  "dir": "ltr",
+  "start_url": "./index.html",
   "scope": "./",
   "background_color": "#fff",
   "theme_color": "#3f51b5",
-  "display": "browser",
+  "categories": ["social", "lifestyle"],
+  "prefer_related_applications": false,
+  "display": "standalone",
   "orientation": "portrait",
   "icons": [
     {
